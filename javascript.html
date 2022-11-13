@@ -26,6 +26,23 @@
         <p>PROGRAMAS EN JS: 
             <ol>
                 <a href="https://willfer97.github.io/tecnologias_js_ajx/palindromo.js"><li>Detectar si la cadena de entrada en un palíndromo. </li></a>
+
+                <script> 
+                    var cadena = prompt('Introduzca un texto o palabra por favor');
+                    cadena = cadena.toLowerCase().replace(/\s/g,"");
+                    var reves = cadena.split("").reverse().join("");
+                    
+                    function palindromo (cadena) {
+                        if(cadena == reves){
+                          alert('El texto o palabra introducido es un palindromo');
+                        }
+                        else{
+                          alert('El texto o palabra introducido NO es un palindromo');
+                        }
+                     }
+                    palindromo (cadena);
+                </script>
+
                 <li>Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.</li>
                 <li>Escribe un programa que pida una frase y escriba las vocales que aparecen.</li>
                 <li>Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales.</li>
