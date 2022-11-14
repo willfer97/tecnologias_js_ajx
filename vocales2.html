@@ -7,18 +7,54 @@
     <title>Document</title>
 </head>
 <body background="https://colombia.unir.net/wp-content/uploads/sites/4/2022/03/unir-logo-v.jpg">
-    <script>
-        const contarVocales = palabra => {
-            const vocales = "aáeéiíoóuú";
-            let cantidadVocales = 0;
-            for (const letra of palabra) {
-                if (vocales.includes(letra.toLowerCase())) {
-                    cantidadVocales++;
-                }
+    <script type="text/javascript">
+ 
+        var palabraIntroducida = prompt("Introduzca una palabra o texto");
+        var aCont= 0;
+        var eCont= 0;
+        var iCont= 0;
+        var oCont= 0;
+        var uCont= 0;
+        var otrosCont = 0;
+         
+         
+        for (var i = 0 ; i < palabraIntroducida.length ; i++) {
+         
+         
+            switch(palabraIntroducida.charAt(i)) {
+         
+                case "a":
+                aCont++;
+                break;
+         
+                case "e":
+                eCont++;
+                break;
+         
+                case "i":
+                iCont++;
+                break;
+         
+                case "o":
+                oCont++;
+                break;
+         
+                case "u":
+                uCont++;
+                break;
+         
+                default:
+                otrosCont++;
+                break;
+         
             }
-            return cantidadVocales;
-        };
-    </script>
+         
+        }
+         
+        document.write("Totales>" + "A: " + aCont + "<br>E: " + eCont + "<br>I: " + iCont + "<br>O: " + oCont + "<br>U: " +
+        uCont + "<br>Otras letras, numeros o caracteres: " + otrosCont);
+         
+        </script>
 
 <nav>
     <a href="https://willfer97.github.io/tecnologias_js_ajx/javascript.html">ANTERIOR</a> | 
