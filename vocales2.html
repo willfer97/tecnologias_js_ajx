@@ -7,15 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <script>const contarVocales = palabra => {
-        const vocales = "aáeéiíoóuú";
-        let cantidadVocales = 0;
-        for (const letra of palabra) {
-            if (vocales.includes(letra.toLowerCase())) {
-                cantidadVocales++;
+    <script>
+        const contarVocales = palabra => {
+            const vocales = "aáeéiíoóuú";
+            let cantidadVocales = 0;
+            for (const letra of palabra) {
+                if (vocales.includes(letra.toLowerCase())) {
+                    cantidadVocales++;
+                }
             }
-        }
-        return cantidadVocales;
+            return cantidadVocales;
         };
     </script>
 
